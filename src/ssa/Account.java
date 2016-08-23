@@ -13,13 +13,13 @@ public class Account {
 	}
 	void deposit (double addMoney) { 
 		balance = balance + addMoney;
-		System.out.printf(" I made a deposit in the amount of %.2f ", addMoney);
+		//System.out.printf(" I made a deposit in the amount of %.2f ", addMoney);
 		
 	}
 	void withdraw (double takemoney) {
 		if (takemoney <= balance) {
 			balance = balance - takemoney;
-		System.out.printf(" I made a withdrawal in the amount of %.2f ", takemoney);
+		//System.out.printf(" I made a withdrawal in the amount of %.2f ", takemoney);
 		}
 		else System.out.println("Insufficient funds. Do Not withdraw!");
 		}
@@ -35,6 +35,7 @@ public class Account {
 	public Account(String description) {
 		this.description = description;
 	}
+	
 	public int getId() {
 		return id;
 	}
@@ -52,8 +53,9 @@ public class Account {
 	}
 	public Account() { //Initializing balance to 0
 		this.balance = 0;
-		
+		this.id = 100; //Initializing id to 100
 	}
+	
 	public double getBalance() {
 		return balance;
 	}
