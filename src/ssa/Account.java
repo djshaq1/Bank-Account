@@ -12,17 +12,26 @@ public class Account {
 		 System.out.println(" ");
 	}
 	void deposit (double addMoney) { 
+		if (addMoney <= 0) 
+			System.out.println(" Unable to process"); 
+		
+		else
+		
 		balance = balance + addMoney;
 		//System.out.printf(" I made a deposit in the amount of %.2f ", addMoney);
 		
 	}
-	void withdraw (double takemoney) {
+	 void withdraw (double takemoney) {
 		if (takemoney <= balance) {
 			balance = balance - takemoney;
+		if (takemoney <= 0)
+			System.out.println("Processing error");
 		//System.out.printf(" I made a withdrawal in the amount of %.2f ", takemoney);
+			
 		}
 		else System.out.println("Insufficient funds. Do Not withdraw!");
 		}
+		
 	String print() { // returning string of account id & balance
 		return " Account " + id + " balance is $" + String.format("%.2f",balance);
 	}
@@ -59,7 +68,7 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
-	private void setBalance(double balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 	

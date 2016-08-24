@@ -53,7 +53,13 @@ public class gregmainline {
 	//```java
 	  // int id - previously
 	//  private int id;
-	
+	Savings savings = new Savings();
+	//savings.balance = 6;
+	savings.deposit(500);
+	savings.setMinimumBalance(5);
+	savings.setInterestRate(.015);
+	savings.CalcDepositInterest(4);
+	System.out.println(savings.print());
 
 }
 }

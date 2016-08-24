@@ -15,20 +15,19 @@
 //		checking.getDetails();
 //		checking.withdraw(300);
 //		
-//		Account savings     = new Account();
-//		savings.id   = 200;
-//		savings.description = "My personal savings account";
-//		savings.balance     = 1000;
-//		savings.getDetails();
-//		savings.withdraw(750);
-//		savings.getDetails();
-//		savings.withdraw(250);
-//		savings.getDetails();
-//		savings.deposit(200);
-//		savings.getDetails();
-//		
+//		Savings savings1     = new 	Savings();
+//		savings1.id   = 200;
+//		savings1.description = "My personal savings account";
+//		savings1.balance     = 500;
+//		savings1.getDetails();
+//		savings1.setInterestRate(0.015);
+//		savings1.getDetails();
+//		savings1.setMonthlyInterestRate(4);
+//		savings1.deposit(200);
+//		savings1.getDetails();
+	
 //		checking.getDetails();
-//		
+ //       System.out.printf(" ", balance);		
 //		 
 //		
 //		
